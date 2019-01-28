@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="containerStyle.css">
+        
+        <script>
+            $(function(){
+                $(window).scroll(function(){
+                    if($(this).scrollTop()>100){
+                        $('nav').addClass('change-color')
+                    }
+                    if($(this).scrollTop()<100){
+                        $('nav').removeClass('change-color')
+                    }
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-bar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="assets/Bitmap2.png" alt="brand logo"></a>
+                </div> 
+                <div id="navigation-bar" class="navbar-collapse collapse">
+                     <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#">Home</a></li>
+                         <li><a href="#">About Us</a></li>
+                         <li><a href="#">Services</a></li>
+                         <li><a href="#">Consultancy</a></li>
+                         <li><a href="#">Blogs</a></li>
+                         <li><a href="#">Contact Us</a></li>
+                     </ul>
+                </div>
+            </div>
+        </nav>   
+        
+        <div class="banner"></div>
+        <div class="container">
+            <div class="col-sm-6">
+                <div class="about-image-container">
+                    <div class="about-image"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="about">
+                    <h2>ABOUT US</h2><br />
+                    <p>IP differs from otherr ip services prividers as the solutions we offer are practical and  "hands-on".We work closely with our clients to get to know the,their business and the issues they face both now and in the longer trem.
+                    We also provide intellectual support services to individual researchers/inventors.<br/>We deliver high quality report.</p>
+                    <button class="button-read">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid service">
+            <div class="container">
+                <h2 class="service-header">SERVICES</h2>
+                <div class="col-sm-4">
+                    <div class="service-division">
+                        <div class="container-service">
+                            <img src="assets/diamond.png">
+                        </div>
+                        <div class="detail-service">
+                            <h4>PATENT</h4>
+                            <p>
+                               With out solution PTO patent searching experience,we provide high quality professional patent search services.
+                            </p>
+                        </div>
+                        <button class="button-read">Read More</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="service-division">
+                        <div class="container-service">
+                        <img src="assets/diamond.png">
+                    </div>
+                        <div class="detail-service">
+                        <h4>IP MANAGEMENT</h4>
+                        <p>
+                           Patent portfolio management,Computer portfolio analysis,Recent Technology Trends,patent process stratergy.          
+                        </p>
+                    </div>
+                        <button class="button-read">Read More</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="service-division">
+                        <div class="container-service">
+                        <img src="assets/diamond.png">
+                    </div>
+                        <div class="detail-service">
+                        <h4>SUPPORT SERVICES</h4>
+                        <p>
+                            You can send instructions or rough sketches and it will be completed in a short interval usually within a week and then send you a draft for your.
+                        </p>
+                    </div>
+                        <button class="button-read">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
